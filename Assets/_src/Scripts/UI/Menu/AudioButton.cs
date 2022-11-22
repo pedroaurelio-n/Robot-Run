@@ -19,9 +19,6 @@ namespace PedroAurelio.HermitCrab
         {
             mixer.SetFloat(volumeName, Mathf.Log10(volumeValue) * 20f);
 
-            mixer.GetFloat(volumeName, out float vol);
-            Debug.Log(vol);
-
             oppositeButton.gameObject.SetActive(true);
             gameObject.SetActive(false);
         }
