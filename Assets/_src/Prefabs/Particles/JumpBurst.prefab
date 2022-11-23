@@ -47,8 +47,8 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   audioChannel: {fileID: 11400000, guid: 2493823474b3a9c4e82f107161670020, type: 2}
   clipSO: {fileID: 11400000, guid: 443e58d036d465844bec7a3f46fb9681, type: 2}
-  willPoolOnStart: 0
   playOnStart: 1
+  playOnNextEnable: 1
   delay: 0
 --- !u!198 &8003594058077584100
 ParticleSystem:

@@ -1,7 +1,7 @@
 using System.Collections;
 using UnityEngine;
 
-namespace PedroAurelio.HermitCrab
+namespace PedroAurelio.RobotRun
 {
     public class DestroyByLifetime : MonoBehaviour
     {

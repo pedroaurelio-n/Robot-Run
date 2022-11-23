@@ -270,8 +270,8 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   audioChannel: {fileID: 11400000, guid: 2493823474b3a9c4e82f107161670020, type: 2}
   clipSO: {fileID: 11400000, guid: fffa3839ce854d147a8409f6574cc780, type: 2}
-  willPoolOnStart: 0
   playOnStart: 0
+  playOnNextEnable: 0
   delay: 0
 --- !u!50 &7112626994527140601
 Rigidbody2D:
@@ -5223,6 +5223,10 @@ PrefabInstance:
   m_Modification:
     m_TransformParent: {fileID: 7112626994527140602}
     m_Modifications:
+    - target: {fileID: 2078420819377212974, guid: adc1c46c257a62a49b83213446d464ea, type: 3}
+      propertyPath: playOnNextEnable
+      value: 1
+      objectReference: {fileID: 0}
     - target: {fileID: 8003594058077584099, guid: adc1c46c257a62a49b83213446d464ea, type: 3}
       propertyPath: m_RootOrder
       value: 2

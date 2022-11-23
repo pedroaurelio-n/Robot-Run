@@ -1,7 +1,7 @@
 using UnityEngine;
 using UnityEngine.SceneManagement;
 
-namespace PedroAurelio.HermitCrab
+namespace PedroAurelio.RobotRun
 {
     public class ChangeScene : MonoBehaviour
     {

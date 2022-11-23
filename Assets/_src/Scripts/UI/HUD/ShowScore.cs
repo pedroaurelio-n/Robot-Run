@@ -1,7 +1,7 @@
 using UnityEngine;
 using TMPro;
 
-namespace PedroAurelio.HermitCrab
+namespace PedroAurelio.RobotRun
 {
     public class ShowScore : MonoBehaviour
     {

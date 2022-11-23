@@ -2,7 +2,7 @@ using UnityEngine;
 using UnityEngine.UI;
 using UnityEngine.Audio;
 
-namespace PedroAurelio.HermitCrab
+namespace PedroAurelio.RobotRun
 {
     [RequireComponent(typeof(Button))]
     public class AudioButton : MonoBehaviour

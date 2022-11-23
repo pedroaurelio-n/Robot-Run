@@ -1,7 +1,7 @@
 using UnityEngine;
 using PedroAurelio.AudioSystem;
 
-namespace PedroAurelio.HermitCrab
+namespace PedroAurelio.RobotRun
 {
     [RequireComponent(typeof(RunnerMovement))]
     public class Runner : MonoBehaviour, IKillable

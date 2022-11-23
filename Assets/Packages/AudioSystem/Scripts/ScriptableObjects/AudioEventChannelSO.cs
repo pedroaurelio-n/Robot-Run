@@ -8,9 +8,6 @@ namespace PedroAurelio.AudioSystem
     {
         public UnityAction<AudioClipSO, Vector3, float> onRaiseAudio;
 
-        public void RaiseEvent(AudioClipSO clipSO, Vector3 position, float delay)
-        {
-            onRaiseAudio?.Invoke(clipSO, position, delay);
-        }
+        public void RaiseEvent(AudioClipSO clipSO, Vector3 position, float delay) => onRaiseAudio?.Invoke(clipSO, position, delay);
     }
 }

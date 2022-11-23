@@ -1,6 +1,6 @@
 using UnityEngine;
 
-namespace PedroAurelio.HermitCrab
+namespace PedroAurelio.RobotRun
 {
     [RequireComponent(typeof(Rigidbody2D))]
     public class RunnerMovement : MonoBehaviour

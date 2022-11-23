@@ -1,4 +1,4 @@
-namespace PedroAurelio.HermitCrab
+namespace PedroAurelio.RobotRun
 {
     public interface IKillable
     {

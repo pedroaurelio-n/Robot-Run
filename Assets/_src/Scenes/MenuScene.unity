@@ -6581,8 +6581,8 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   audioChannel: {fileID: 11400000, guid: 2493823474b3a9c4e82f107161670020, type: 2}
   clipSO: {fileID: 11400000, guid: e40240fd1b5d2a14ead8021a9e0463b4, type: 2}
-  willPoolOnStart: 0
   playOnStart: 1
+  playOnNextEnable: 0
   delay: 0
 --- !u!4 &733462364
 Transform:
@@ -7075,8 +7075,9 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 2bb29a05c495e1c4eaed7f218bad4972, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  audioChannel: {fileID: 11400000, guid: 2493823474b3a9c4e82f107161670020, type: 2}
-  audioPlayerPrefab: {fileID: 6055492019061051976, guid: 6043b86e3e9ae804faf8c1ded462b551, type: 3}
+  sfxChannel: {fileID: 11400000, guid: f2792a133eb45534f8fe08f5e028eed4, type: 2}
+  musicChannel: {fileID: 11400000, guid: 2493823474b3a9c4e82f107161670020, type: 2}
+  uiChannel: {fileID: 11400000, guid: 7e6f9e36131368c46a7c93f305ee9990, type: 2}
   initialPoolCount: 5
 --- !u!4 &908611070
 Transform:

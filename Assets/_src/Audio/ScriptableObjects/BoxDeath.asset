@@ -14,5 +14,8 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   Clip: {fileID: 8300000, guid: b827baf5bee65334dbb7819d4eaa968d, type: 3}
   MixerGroup: {fileID: -8741301138401188178, guid: ed059d91ddab7da458965b3c564b1aec, type: 2}
+  MaxInstances: 3
   Loop: 0
   SpatialBlend: 0
+  volumeRange: {x: 0.8, y: 1}
+  pitchRange: {x: 0.85, y: 1.2}

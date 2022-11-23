@@ -2,7 +2,7 @@ using UnityEngine;
 using Cinemachine;
 using DG.Tweening;
 
-namespace PedroAurelio.HermitCrab
+namespace PedroAurelio.RobotRun
 {
     public class CinemachineCamera : MonoBehaviour
     {

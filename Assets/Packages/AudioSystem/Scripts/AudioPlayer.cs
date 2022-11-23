@@ -7,6 +7,7 @@ namespace PedroAurelio.AudioSystem
     public class AudioPlayer : MonoBehaviour
     {
         private AudioSource _audioSource;
+        private AudioClipSO _clipSO;
 
         private void Awake() => _audioSource = GetComponent<AudioSource>();
 
@@ -18,10 +19,15 @@ namespace PedroAurelio.AudioSystem
 
         public void PlayAudio(AudioClipSO clipSO, Vector3 position, float delay, Action releaseAction)
         {
+            _clipSO = clipSO;
+
             _audioSource.enabled = true;
-            _audioSource.loop = clipSO.Loop;
-            _audioSource.clip = clipSO.Clip;
-            _audioSource.outputAudioMixerGroup = clipSO.MixerGroup;
+            _audioSource.loop = _clipSO.Loop;
+            _audioSource.spatialBlend = _clipSO.SpatialBlend;
+            _audioSource.clip = _clipSO.Clip;
+            _audioSource.volume = clipSO.Volume;
+            _audioSource.pitch = clipSO.Pitch;
+            _audioSource.outputAudioMixerGroup = _clipSO.MixerGroup;
             transform.position = position;
 
             if (delay == 0f)
@@ -30,16 +36,25 @@ namespace PedroAurelio.AudioSystem
                 _audioSource.PlayDelayed(delay);
             
             if (!_audioSource.loop)
-                StartCoroutine(WaitForClipCoroutine(clipSO.Clip.length, delay, releaseAction));
+                StartCoroutine(WaitForClipCoroutine(delay, releaseAction));
         }
 
-        private IEnumerator WaitForClipCoroutine(float duration, float delay, Action releaseAction)
+        private IEnumerator WaitForClipCoroutine(float delay, Action releaseAction)
         {
             if (delay != 0f)
                 yield return new WaitForSeconds(delay);
 
-            yield return new WaitForSeconds(duration);
+            yield return new WaitForSeconds(_clipSO.Clip.length);
+            _clipSO.RemoveInstance();
+            _clipSO = null;
+
             releaseAction.Invoke();
+        }
+
+        private void OnDisable()
+        {
+            if (_clipSO != null)
+                _clipSO.RemoveInstance();
         }
     }
 }

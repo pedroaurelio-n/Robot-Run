@@ -1,6 +1,6 @@
 using UnityEngine;
 
-namespace PedroAurelio.HermitCrab
+namespace PedroAurelio.RobotRun
 {
     public class ApplyDamage : MonoBehaviour
     {

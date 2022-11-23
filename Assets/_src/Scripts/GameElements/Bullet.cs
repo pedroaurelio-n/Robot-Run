@@ -1,7 +1,7 @@
 using System.Collections;
 using UnityEngine;
 
-namespace PedroAurelio.HermitCrab
+namespace PedroAurelio.RobotRun
 {
     [RequireComponent(typeof(Rigidbody2D))]
     public class Bullet : MonoBehaviour, IPoolable
