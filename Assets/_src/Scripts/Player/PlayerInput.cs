@@ -23,23 +23,23 @@ namespace PedroAurelio.RobotRun
         {
             HandleTouchInputs();
 
-            #if UNITY_EDITOR
-            if (Input.GetMouseButtonDown(0))
+            #if UNITY_WEBGL || UNITY_EDITOR
+            if (Input.GetMouseButtonDown(1))
             {
                 _shoot.SetShootInput(true);
             }
 
-            if (Input.GetMouseButtonUp(0))
+            if (Input.GetMouseButtonUp(1))
             {
                 _shoot.SetShootInput(false);
             }
 
-            if (Input.GetMouseButtonDown(1))
+            if (Input.GetMouseButtonDown(0))
             {
                 _movement.SetJumpInput(true);
             }
 
-            if (Input.GetMouseButtonUp(1))
+            if (Input.GetMouseButtonUp(0))
             {
                 _movement.SetJumpInput(false);
             }
